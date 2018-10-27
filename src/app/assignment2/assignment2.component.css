@@ -1,3 +1,5 @@
 p {
-    background-color:greenyellow;
+    background-color: greenyellow;
+    padding: 20px;
+    border: 1px solid greenyellow;
 }
