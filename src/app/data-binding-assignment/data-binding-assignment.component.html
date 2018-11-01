@@ -1,0 +1,14 @@
+
+<input type="text"
+class="form-control" [value]="userName"
+(input)="onUpdateUserName($event)">  <!-- Event Bindung mit Event-->
+
+<!-- <input type="text"
+class="form-control"
+[(ngmodel)]="userName">   2-way binding-->
+
+
+<p> {{userName}}</p> <!-- String Interpolation-->
+
+<button class="btn btn-primary" (click)="onResteButtonClicked()" [disabled]="userName === '' " >Reset User</button> <!--Event Binding-->
+
