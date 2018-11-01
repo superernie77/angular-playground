@@ -1,14 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label>Username</label>
+      <input type="text" class="form-control" [value]="userName" (input)="onUpdateUserName($event)">
+      <!-- Event Bindung mit Event-->
 
-<input type="text"
-class="form-control" [value]="userName"
-(input)="onUpdateUserName($event)">  <!-- Event Bindung mit Event-->
-
-<!-- <input type="text"
-class="form-control"
-[(ngmodel)]="userName">   2-way binding-->
+       <input type="text"
+  class="form-control"
+  [(ngModel)]="userName">   <!-- 2-way binding-->
 
 
-<p> {{userName}}</p> <!-- String Interpolation-->
+      <p> {{userName}}</p> <!-- String Interpolation-->
 
-<button class="btn btn-primary" (click)="onResteButtonClicked()" [disabled]="userName === '' " >Reset User</button> <!--Event Binding-->
+      <button class="btn btn-primary" (click)="onResteButtonClicked()" [disabled]="userName === '' ">Reset User</button>
+      <!--Event Binding-->
 
+    </div>
+  </div>
+</div>
