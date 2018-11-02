@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment1Component } from './assignment1/assignment1.component';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
+import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataBindingAssignmentComponent } from './data-binding-assignment/data-b
     ServersComponent,
     Assignment2Component,
     Assignment1Component,
-    DataBindingAssignmentComponent
+    DataBindingAssignmentComponent,
+    DirectiveAssignmentComponent
   ],
   imports: [
     BrowserModule,

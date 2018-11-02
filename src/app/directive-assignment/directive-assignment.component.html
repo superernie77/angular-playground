@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button (click)='onButtonClicked()' >{{buttonText}}</button>
+
+      <p *ngIf="showText">Secret Password = 'Tuna'</p>
+
+      <hr>
+
+      <div *ngFor='let item of messages'>
+        <p>{{item}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
