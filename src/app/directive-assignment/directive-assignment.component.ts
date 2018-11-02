@@ -4,7 +4,11 @@ import { timingSafeEqual } from 'crypto';
 @Component({
   selector: 'app-directive-assignment',
   templateUrl: './directive-assignment.component.html',
-  styleUrls: ['./directive-assignment.component.css']
+  styles: [`
+    .white-text { 
+      color : white;
+    }
+    `]
 })
 export class DirectiveAssignmentComponent implements OnInit {
 
@@ -19,7 +23,7 @@ export class DirectiveAssignmentComponent implements OnInit {
   onButtonClicked(){
     // update history list
     this.rowCount = this.rowCount+1;
-    this.messages.push('New Message'+this.rowCount);
+    this.messages.push(new Date());
     
     // show text and change button label
     this.showText = !this.showText;
@@ -27,6 +31,14 @@ export class DirectiveAssignmentComponent implements OnInit {
       this.buttonText = 'Hide Details';
     } else {
       this.buttonText = 'Display Details';
+    }
+  }
+
+  getBackgroundColor(){
+    if (this.rowCount >= 5) {
+      return 'blue';
+    } else {
+      return 'white'
     }
   }
 
