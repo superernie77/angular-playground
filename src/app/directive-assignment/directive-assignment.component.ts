@@ -18,11 +18,8 @@ export class DirectiveAssignmentComponent implements OnInit {
 
   messages = [];
 
-  rowCount = 0;
-
   onButtonClicked(){
     // update history list
-    this.rowCount = this.rowCount+1;
     this.messages.push(new Date());
     
     // show text and change button label
@@ -31,14 +28,6 @@ export class DirectiveAssignmentComponent implements OnInit {
       this.buttonText = 'Hide Details';
     } else {
       this.buttonText = 'Display Details';
-    }
-  }
-
-  getBackgroundColor(){
-    if (this.rowCount >= 5) {
-      return 'blue';
-    } else {
-      return 'white'
     }
   }
 
