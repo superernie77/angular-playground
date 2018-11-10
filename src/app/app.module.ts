@@ -9,6 +9,7 @@ import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment1Component } from './assignment1/assignment1.component';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment.component';
+import { CustomPropertyComponent } from './custom-property/custom-property.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DirectiveAssignmentComponent } from './directive-assignment/directive-a
     Assignment2Component,
     Assignment1Component,
     DataBindingAssignmentComponent,
-    DirectiveAssignmentComponent
+    DirectiveAssignmentComponent,
+    CustomPropertyComponent
   ],
   imports: [
     BrowserModule,
