@@ -10,6 +10,7 @@ import { Assignment1Component } from './assignment1/assignment1.component';
 import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment.component';
 import { CustomPropertyComponent } from './custom-property/custom-property.component';
+import { CustomEventComponent } from './custom-event/custom-event.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomPropertyComponent } from './custom-property/custom-property.compo
     Assignment1Component,
     DataBindingAssignmentComponent,
     DirectiveAssignmentComponent,
-    CustomPropertyComponent
+    CustomPropertyComponent,
+    CustomEventComponent
   ],
   imports: [
     BrowserModule,
