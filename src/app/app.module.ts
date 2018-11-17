@@ -12,6 +12,7 @@ import { DirectiveAssignmentComponent } from './directive-assignment/directive-a
 import { CustomPropertyComponent } from './custom-property/custom-property.component';
 import { CustomEventComponent } from './custom-event/custom-event.component';
 import { EvenOddComponent } from './even-odd/even-odd.component';
+import { BasicHighlightDirective } from './even-odd/basic-highlight/basic-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EvenOddComponent } from './even-odd/even-odd.component';
     DirectiveAssignmentComponent,
     CustomPropertyComponent,
     CustomEventComponent,
-    EvenOddComponent
+    EvenOddComponent,
+    BasicHighlightDirective
   ],
   imports: [
     BrowserModule,
