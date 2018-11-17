@@ -11,6 +11,7 @@ import { DataBindingAssignmentComponent } from './data-binding-assignment/data-b
 import { DirectiveAssignmentComponent } from './directive-assignment/directive-assignment.component';
 import { CustomPropertyComponent } from './custom-property/custom-property.component';
 import { CustomEventComponent } from './custom-event/custom-event.component';
+import { EvenOddComponent } from './even-odd/even-odd.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomEventComponent } from './custom-event/custom-event.component';
     DataBindingAssignmentComponent,
     DirectiveAssignmentComponent,
     CustomPropertyComponent,
-    CustomEventComponent
+    CustomEventComponent,
+    EvenOddComponent
   ],
   imports: [
     BrowserModule,

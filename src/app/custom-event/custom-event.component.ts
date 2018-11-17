@@ -1,5 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-custom-event',
@@ -8,7 +7,7 @@ import { EventEmitter } from 'events';
 })
 export class CustomEventComponent implements OnInit {
 
-   @Output() customEvent = new EventEmitter< {eventName : string, eventContent : string} >();
+   @Output() customEvent = new EventEmitter< {eventName : string, eventContent : string}>();
 
   constructor() { }
 
@@ -16,11 +15,7 @@ export class CustomEventComponent implements OnInit {
   }
 
   onFireEvent(){
-    this.customEvent.emit(
-      eventName = 'customEvent',
-      eventContent = 'custom vent content'
-    }
-    )
+    //this.customEvent.emit( { eventName = 'customEvent', eventContent = 'custom vent content' } );
   }
 
 }
