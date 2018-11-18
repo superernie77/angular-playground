@@ -13,6 +13,7 @@ import { CustomPropertyComponent } from './custom-property/custom-property.compo
 import { CustomEventComponent } from './custom-event/custom-event.component';
 import { EvenOddComponent } from './even-odd/even-odd.component';
 import { BasicHighlightDirective } from './even-odd/basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './even-odd/better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BasicHighlightDirective } from './even-odd/basic-highlight/basic-highli
     CustomPropertyComponent,
     CustomEventComponent,
     EvenOddComponent,
-    BasicHighlightDirective
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
