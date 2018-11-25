@@ -10,6 +10,8 @@ export class EvenOddComponent implements OnInit {
   oddNumbers = [1 , 3 , 5 ];
   evenNumbers = [2 , 4 , 6 ];
 
+  value = 10;
+
   onlyOdd = true;
 
   constructor() { }
