@@ -15,7 +15,7 @@
           {{odd}}
         </li>
       </div>
-      <div *ngIf="!onlyOdd">
+      <div *appUnless="onlyOdd">
           <li *ngFor="let even of oddNumbers"
           [ngClass]="{odd: even % 2 !== 0 }"
           [ngStyle]="{backgroundColor: even % 2 !== 0 ? 'yellow' : 'transparent'}"
@@ -24,7 +24,8 @@
           </li>
         </div>
       </ul>
-      <p appBetterHighlight [highlightColor]="'red'" [defaultColor] ="'yellow'">Style me with a better directive</p>
+      <!--attribute can be referenced with or without brackets-->
+      <p appBetterHighlight [highlightColor]="'red'" defaultColor ="yellow">Style me with a better directive</p>
       <p appBasicHighlight>Style me with directive</p>
     </div>
   </div>

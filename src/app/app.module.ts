@@ -14,6 +14,7 @@ import { CustomEventComponent } from './custom-event/custom-event.component';
 import { EvenOddComponent } from './even-odd/even-odd.component';
 import { BasicHighlightDirective } from './even-odd/basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './even-odd/better-highlight/better-highlight.directive';
+import { UnlessDirective } from './even-odd/unless/unless.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BetterHighlightDirective } from './even-odd/better-highlight/better-hig
     CustomEventComponent,
     EvenOddComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
