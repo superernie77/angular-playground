@@ -8,7 +8,11 @@ import { AccountsService } from '../accounts.service';
   styleUrls: ['./new-account.component.css']
 })
 export class NewAccountComponent {
-  constructor(private loggingService: LoggingService, private accountsService : AccountsService) { }
+  constructor(private loggingService: LoggingService, private accountsService : AccountsService) { 
+    this.accountsService.statusUpdatedEvent.subscribe(
+      (status : string) => alert('New Status ' + status)
+    );
+  }
 
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountsService.addAccount(accountName,accountStatus);
