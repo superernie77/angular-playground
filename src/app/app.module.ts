@@ -18,6 +18,8 @@ import { UnlessDirective } from './even-odd/unless/unless.directive';
 import { AccountComponent } from './account-example/account/account.component';
 import { NewAccountComponent } from './account-example/new-account/new-account.component';
 import { AccountExampleComponent } from './account-example/account-example.component';
+import { AccountsService } from './account-example/accounts.service';
+import { LoggingService } from './account-example/logging.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,7 @@ import { AccountExampleComponent } from './account-example/account-example.compo
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
