@@ -20,6 +20,8 @@ import { NewAccountComponent } from './account-example/new-account/new-account.c
 import { AccountExampleComponent } from './account-example/account-example.component';
 import { AccountsService } from './account-example/accounts.service';
 import { LoggingService } from './account-example/logging.service';
+import { AppCustomDirectiveParentComponent } from './app-custom-directive-parent/app-custom-directive-parent.component';
+import { HighlightDirective } from './app-custom-directive-parent/app-highlight-directive/app-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { LoggingService } from './account-example/logging.service';
     UnlessDirective,
     AccountComponent,
     NewAccountComponent,
-    AccountExampleComponent
+    AccountExampleComponent,
+    AppCustomDirectiveParentComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
