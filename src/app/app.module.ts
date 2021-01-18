@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms' ;
+import { FormsModule, ReactiveFormsModule } from '@angular/forms' ;
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
@@ -22,6 +22,7 @@ import { AccountsService } from './account-example/accounts.service';
 import { LoggingService } from './account-example/logging.service';
 import { AppCustomDirectiveParentComponent } from './app-custom-directive-parent/app-custom-directive-parent.component';
 import { HighlightDirective } from './app-custom-directive-parent/app-highlight-directive/app-highlight.directive';
+import { FormComponentComponent } from './reactiveforms/form-component/form-component.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +43,13 @@ import { HighlightDirective } from './app-custom-directive-parent/app-highlight-
     NewAccountComponent,
     AccountExampleComponent,
     AppCustomDirectiveParentComponent,
-    HighlightDirective
+    HighlightDirective,
+    FormComponentComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
