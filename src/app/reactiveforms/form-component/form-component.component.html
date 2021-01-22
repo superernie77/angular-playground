@@ -39,10 +39,10 @@
             <button class="button btn-default" type="button" (click)="onAddHobbies()">
                     Add Hobbies
             </button>
-        </div>
         <div class="formGroup" *ngFor="let hobbyControl of signupForm.get('hobbies').controls ; let i = index;">
           <input type="text" class="form-control" [formControlName]="i" >
         </div>
+      </div>
         <span 
         *ngIf="!signupForm.valid && signupForm.touched"
         class="help-block">Enter valid data!</span>
